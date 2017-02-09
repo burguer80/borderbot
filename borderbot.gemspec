@@ -6,12 +6,12 @@ require 'borderbot/version'
 Gem::Specification.new do |spec|
   spec.name          = "borderbot"
   spec.version       = Borderbot::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.authors       = ["Sergio Burgueño"]
+  spec.email         = ["burguer@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Borders wait times for ruby programmers}
+  spec.description   = %q{Get latest borders wait time from U.S. Customs and Border Patrol website parsed as a ruby easy to use hash}
+  spec.homepage      = "https://github.com/burguer80/borderbot"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
