@@ -16,4 +16,16 @@ class Qcore
       return bwtXML
     end
 
+    def zortificate(bwtXML)
+      #bwtXML converted to hash for easy usage
+      bwtHASH = Hash.from_xml(bwtXML.to_s)
+
+      for port in bwtHASH[:border_wait_time][:port]
+        #puts port[:port_name]
+        #TODO implement the dcore sort methods
+      end
+
+      return bwtHASH
+    end
+
 end
