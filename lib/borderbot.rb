@@ -1,5 +1,5 @@
 require "borderbot/version"
+require "borderbot/agent"
 
 module Borderbot
-  # Your code goes here...
 end
