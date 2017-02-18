@@ -5,7 +5,11 @@ describe Borderbot do
     expect(Borderbot::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(true).to eq(true)
+  it "Agent instance created succesfully" do
+    agent = Agent.new
+    expect(agent.class).to eq(Agent)
+    expect(agent.bwt_url.class).to eq(String)
+    expect(agent.ports.class).to eq(Array)
   end
+
 end

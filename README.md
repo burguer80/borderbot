@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 [![Build Status](https://travis-ci.org/burguer80/borderbot.svg?branch=master)](https://travis-ci.org/burguer80/borderbot)
 
+=======
+
+[![Build Status](https://travis-ci.org/burguer80/borderbot.svg?branch=master)](https://travis-ci.org/burguer80/borderbot)
+
+[![Coverage Status](https://coveralls.io/repos/github/burguer80/borderbot/badge.svg?branch=master)](https://coveralls.io/github/burguer80/borderbot?branch=master)
+
+>>>>>>> Dev
 # Borderbot
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/borderbot`. To experiment with that code, run `bin/console` for an interactive prompt.
