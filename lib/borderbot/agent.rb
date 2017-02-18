@@ -11,15 +11,16 @@ class Agent
       @bwt_url = Qcore.new.bwt_url
       @ports = nil
       @executed_at = nil
+      compute
   end
 
   def compute
     #New Query Core instance
-    qCore  = Qcore.new
+    queryCore  = Qcore.new
     #Get XML data from BWT website
-    bwtXML = qCore.get_bwt_xml_data
+    bwtXML = queryCore.get_bwt_xml_data
     #set the ordereded ports into @ports
-    @ports = qCore.extract_ports(bwtXML)
+    @ports = queryCore.extract_ports(bwtXML)
     #set the last execution time
     @executed_at = DateTime.now
   end

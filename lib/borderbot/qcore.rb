@@ -17,7 +17,6 @@ class Qcore
 
     def extract_ports(bwtXML)
       ports = Dcore.new.zortificate_ports(bwtXML)
-
       return ports
     end
 
