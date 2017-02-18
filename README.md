@@ -1,3 +1,4 @@
+
 [![Build Status](https://travis-ci.org/burguer80/borderbot.svg?branch=master)](https://travis-ci.org/burguer80/borderbot)
 
 [![Coverage Status](https://coveralls.io/repos/github/burguer80/borderbot/badge.svg?branch=master)](https://coveralls.io/github/burguer80/borderbot?branch=master)

@@ -19,7 +19,7 @@ class Agent
     #Get XML data from BWT website
     bwtXML = qCore.get_bwt_xml_data
     #set the ordereded ports into @ports
-    @ports = qCore.zortificate(bwtXML)
+    @ports = qCore.extract_ports(bwtXML)
     #set the last execution time
     @executed_at = DateTime.now
   end

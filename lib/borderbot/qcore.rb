@@ -2,7 +2,6 @@
 require 'nokogiri'
 require 'open-uri'
 require "borderbot/dcore"
-require "borderbot/hash"
 
 class Qcore
     attr_accessor :bwt_url
@@ -16,16 +15,10 @@ class Qcore
       return bwtXML
     end
 
-    def zortificate(bwtXML)
-      #bwtXML converted to hash for easy usage
-      bwtHASH = Hash.from_xml(bwtXML.to_s)
+    def extract_ports(bwtXML)
+      ports = Dcore.new.zortificate_ports(bwtXML)
 
-      for port in bwtHASH[:border_wait_time][:port]
-        #puts port[:port_name]
-        #TODO implement the dcore sort methods
-      end
-
-      return bwtHASH
+      return ports
     end
 
 end
