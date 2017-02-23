@@ -11,12 +11,13 @@ class Dcore
       ports = []
 
       for port in bwtHASH[:border_wait_time][:port]
-        portName, updateTime, portNumber, portStatus, data = parsePortData(port)
+        crossingName, portName, updateTime, portNumber, portStatus, data = parsePortData(port)
         zortificatedPort = {
           updateTime: updateTime,
           portNumber: portNumber,
           portStatus: portStatus,
           portName: portName,
+          crossingName: crossingName,
           data: data
         }
         ports.push(zortificatedPort)
@@ -36,8 +37,10 @@ class Dcore
         portNumber = port[:port_number]
         #get port name
         portName = port[:port_name]
+        #get port name
+        crossingName = port[:crossing_name]
         #Return to DataPort()
-        return [portName, updateTime, portNumber, portStatus, data]
+        return [crossingName, portName, updateTime, portNumber, portStatus, data]
     else
         return nil
     end
