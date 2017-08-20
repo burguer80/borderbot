@@ -14,7 +14,7 @@ Borderbot is a easy way to get the border wait times from
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'borderbot'
+gem 'borderbot1'
 ```
 
 And then execute:
