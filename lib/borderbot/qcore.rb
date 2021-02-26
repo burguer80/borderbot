@@ -7,11 +7,11 @@ class Qcore
     attr_accessor :bwt_url
 
     def initialize
-      @bwt_url = 'https://apps.cbp.gov/bwt/bwt.xml'
+      @bwt_url = 'https://bwt.cbp.gov/xml/bwt.xml'
     end
 
     def get_bwt_xml_data
-      bwtXML = Nokogiri::XML(open("https://apps.cbp.gov/bwt/bwt.xml"))
+      bwtXML = Nokogiri::XML(open("https://bwt.cbp.gov/xml/bwt.xml"))
       return bwtXML
     end
 

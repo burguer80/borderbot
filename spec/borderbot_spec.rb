@@ -14,7 +14,7 @@ describe Borderbot do
   it "BWT XML url is present" do
    #code
    queryCore  = Qcore.new
-   expect(queryCore.bwt_url).to eq('https://apps.cbp.gov/bwt/bwt.xml')
+   expect(queryCore.bwt_url).to eq('https://bwt.cbp.gov/xml/bwt.xml')
   end
 
   it "QueryCore is able to get BWT XML " do
