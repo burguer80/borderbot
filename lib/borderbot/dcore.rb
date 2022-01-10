@@ -30,7 +30,7 @@ class Dcore
     day_wait_times = grouped_by_day_of_the_week.fetch(day_of_the_week)
     wait_times_in_specific_time = day_wait_times.select {|data| data["time_slot"] == time_slot}
 
-    return wait_times_in_specific_time_and_day
+    return wait_times_in_specific_time
   end
 
   def parsePortData(port)
