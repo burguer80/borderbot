@@ -26,7 +26,7 @@ class Qcore
     def get_historical_data(port_number, month, day_of_the_week, time_slot)
       bwtJSON = JSON.load(open("https://bwt.cbp.gov/api/historicalwaittimes/#{port_number}/POV/GEN/#{month}/7"))
       historical_data = Dcore.new.get_wait_times_on_day_and_time(bwtJSON, day_of_the_week, time_slot)
-      return bwtJSON
+      return historical_data
     end
 
 end
