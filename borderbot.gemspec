@@ -6,7 +6,7 @@ require 'borderbot/version'
 Gem::Specification.new do |spec|
   spec.name          = "borderbot"
   spec.version       = Borderbot::VERSION
-  spec.authors       = ["Sergio Burgueño"]
+  spec.authors       = ["Sergio Burgueño", "Guillermo Vargas"]
   spec.email         = ["burguer@gmail.com"]
 
   spec.summary       = %q{Borders wait times for ruby programmers}
