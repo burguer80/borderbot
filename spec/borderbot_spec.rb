@@ -34,4 +34,11 @@ describe Borderbot do
     expect(ports.class).to  eq(Array)
   end
 
+  it "Tests historical data" do
+    queryCore = Qcore.new
+    # historical_data = queryCore.get_historical_data("06240202", "1", "7")
+    historical_data = queryCore.get_historical_data("06240202", "1", "6", "0")
+    expect(historical_data).not_to be nil
+  end
+
 end

@@ -25,6 +25,14 @@ class Dcore
       return ports
   end
 
+  def get_wait_times_on_day_and_time(bwtJSON, day_of_the_week, time_slot)
+    grouped_by_day_of_the_week = bwtJSON["wait_times"].group_by{|dataset| dataset["bwt_day"]}
+    day_wait_times = grouped_by_day_of_the_week.fetch(day_of_the_week)
+    wait_times_in_specific_time = day_wait_times.select {|data| data["time_slot"] == time_slot}
+
+    return wait_times_in_specific_time_and_day
+  end
+
   def parsePortData(port)
       #Get Update time
       updateTime = getUpdateTime(port)
