@@ -14,7 +14,7 @@ describe Borderbot do
   it "BWT XML url is present" do
    #code
    queryCore  = Qcore.new
-   expect(queryCore.bwt_url).to eq('https://apps.cbp.gov/bwt/bwt.xml')
+   expect(queryCore.bwt_url).to eq('https://bwt.cbp.gov/xml/bwt.xml')
   end
 
   it "QueryCore is able to get BWT XML " do
@@ -32,6 +32,13 @@ describe Borderbot do
     #set the ordereded ports into @ports
     ports = queryCore.extract_ports(bwtXML)
     expect(ports.class).to  eq(Array)
+  end
+
+  it "Tests historical data" do
+    queryCore = Qcore.new
+    # historical_data = queryCore.get_historical_data("06240202", "1", "7")
+    historical_data = queryCore.get_historical_data("06240202", "1", "6", "0")
+    expect(historical_data).not_to be nil
   end
 
 end

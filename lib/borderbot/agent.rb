@@ -25,5 +25,11 @@ class Agent
     @executed_at = DateTime.now
   end
 
+  def get_historical_bwt(port_number, month, day_of_the_week, time_of_day)
+    queryCore = Qcore.new
+    # Get the historical BWT
+    filtered_history = queryCore.get_historical_data(port_number, month, day_of_the_week, time_of_day)
+    return filtered_history
+  end
 
 end
